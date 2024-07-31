@@ -5,12 +5,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
     position: relative;
     width: 150px;
     height: 200px;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    0% { transform: translateX(-150px); }
+    100% { transform: translateX(100vw); }
 }
 
 .head {
