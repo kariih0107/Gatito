@@ -3,34 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kitty Animation</title>
+    <title>Cat Animation</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="head">
-            <div class="ear ear-left"></div>
-            <div class="ear ear-right"></div>
-            <div class="face">
-                <div class="eye eye-left">
-                    <div class="pupil"></div>
+    <p>Cat<span>Nap</span></p>
+    <div class="container" onclick="showMessage()">
+        <div class="cat">
+            <div class="head">
+                <div class="ears">
+                    <div></div>
+                    <div></div>
                 </div>
-                <div class="eye eye-right">
-                    <div class="pupil"></div>
+                <div class="face">
+                    <div class="eyes">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="nose">
+                        <div class="mustache">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mustache">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="nose"></div>
-                <div class="mouth"></div>
-                <div class="whiskers whisker-left"></div>
-                <div class="whiskers whisker-right"></div>
+            </div>
+            <div class="body">
+                <div class="tail"></div>
+            </div>
+            <div class="sleep">
+                <div>z</div>
+                <div>z</div>
+                <div>z</div>
+                <div>z</div>
+                <div>z</div>
+                <div>z</div>
             </div>
         </div>
-        <div class="body">
-            <div class="leg leg-front-left"></div>
-            <div class="leg leg-front-right"></div>
-            <div class="leg leg-back-left"></div>
-            <div class="leg leg-back-right"></div>
-        </div>
-        <div class="tail"></div>
     </div>
+    <div class="bg"></div>
+    <div id="message" class="message">Te quiero</div>
+    <script src="script.js"></script>
 </body>
 </html>
