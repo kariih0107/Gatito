@@ -9,8 +9,8 @@
 <body>
     <p>Cat<span>Nap</span></p>
 
-    <div class="container" onclick="showMessage()">
-        <div class="cat">
+    <div class="container">
+        <div class="cat" onclick="this.classList.toggle('active');">
             <div class="head">
                 <div class="ears">
                     <div></div>
@@ -51,8 +51,6 @@
 
     <div class="bg"></div>
 
-    <div class="message" id="message">Te quiero</div>
-
-    <script src="script.js"></script>
+    <div class="message">Te quiero</div>
 </body>
 </html>
