@@ -32,7 +32,7 @@ p span {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer; /* Cambia el cursor al pasar sobre el gato */
+    cursor: pointer;
 }
 
 .cat {
@@ -64,7 +64,7 @@ p span {
     }
 }
 
-.ears > div:nth-child(1), .ears > div:nth-child(2) {
+.ears > div {
     height: 20px;
     width: 2px;
     position: absolute;
@@ -75,21 +75,11 @@ p span {
     border-right: 7px solid transparent;
     border-top: 0px solid transparent;
     transform-origin: bottom;
-    transform: rotate(-5deg);
-    border-radius: 14px 46px 0px 28px;
 }
 
-.ears > div:nth-child(1):before, .ears > div:nth-child(2):before {
-    content: "";
-    height: 15px;
-    width: 0px;
-    position: absolute;
-    border-bottom: 22px solid #b7b7b7;
-    border-left: 8px solid transparent;
-    border-right: 2px solid transparent;
-    left: -11px;
-    top: 5px;
-    transform: rotate(10deg);
+.ears > div:nth-child(2) {
+    left: 10px;
+    transform: rotate(-22deg);
 }
 
 .face {
@@ -107,13 +97,12 @@ p span {
     justify-content: space-evenly;
     width: 100%;
 }
+
 .eyes > div {
     height: 20px;
     width: 20px;
     background: #fff;
-    box-shadow: inset 3px 4px #b7b7b7;
-    border-radius: 68% 6%;
-    transform: rotate(219deg);
+    border-radius: 50%;
 }
 
 .nose {
@@ -131,15 +120,13 @@ p span {
     border-top: 6px solid #b7b7b7;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 0px solid transparent;
     margin-top: 4px;
-    display: inline-block;
 }
 
 .mustache {
-    width: 100%;
     position: absolute;
 }
+
 .mustache > div {
     height: 12px;
     width: 3px;
@@ -164,16 +151,6 @@ p span {
     top: 44%;
     border-radius: 200px;
     box-shadow: inset 10px 34px 0px #fff;
-    transform: rotate(-451deg);
-}
-.tail:after {
-    content: "";
-    position: absolute;
-    width: 124px;
-    height: 94px;
-    border-radius: 0 0 264px 218px;
-    top: 57%;
-    box-shadow: inset 10px -10px #fff;
 }
 
 .bg {
@@ -184,7 +161,7 @@ p span {
 
 .message {
     position: absolute;
-    top: 20px; /* Puedes ajustar la posición según lo necesites */
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
